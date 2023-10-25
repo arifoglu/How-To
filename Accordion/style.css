@@ -3,6 +3,8 @@
     color: #444;
     cursor: pointer;
     padding: 18px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: left;
     border: none;
