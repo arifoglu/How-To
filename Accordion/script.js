@@ -27,8 +27,12 @@ window.onload = function () {
  
      Array.prototype.forEach.call( buttons , function( button ){
  
-         button.onclick = function()
+         button.onclick = function(e)
          { 
+            console.log("click");
+
+            e.preventDefault();
+
              if(this.classList.contains("active"))
              {
               this.classList.remove("active"); 
@@ -38,10 +42,8 @@ window.onload = function () {
              {
               this.classList.add("active");
               this.nextElementSibling.style.display = "none"; 
-             }  
+             } 
          }
      });
-
    
-      
 }
